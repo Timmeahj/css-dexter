@@ -1,0 +1,221 @@
+body{
+    overflow: hidden;
+}
+
+.dexter{
+    width: 550px;
+    height: 600px;
+    border: 1px solid red;
+    position: absolute;
+    margin-left: calc(50% - 275px);
+    margin-top: calc(50vh - 300px);
+}
+
+.body{
+    width: 400px;
+    height: 250px;
+    border: 10px solid black;
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+}
+
+.button{
+    background: black;
+    height: 40px;
+    width: 10px;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 20px;
+    position: absolute;
+}
+
+.zipper{
+    width: 5px;
+    background: black;
+    height: 250px;
+    position: absolute;
+    left: 55%;
+}
+
+.arm{
+    width: 158px;
+    height: 153px;
+    position: absolute;
+    left: 61%;
+    bottom: -11px;
+    z-index: 2;
+}
+
+.hand{
+    width: 158px;
+    height: 110px;
+    position: absolute;
+    bottom: 0;
+}
+
+.wrist{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 90px 90px 0 0;
+    border-color: purple transparent transparent transparent;
+    transform: rotate(-130deg);
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    z-index: 1;
+}
+
+.wristBorder{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 0;
+    border-color: black transparent transparent transparent;
+    transform: rotate(-130deg);
+    left: 15px;
+    position: absolute;
+    top: -28px;
+}
+
+.finger{
+    background: purple;
+    width: 25px;
+    height: 55px;
+    border: 3px solid black;
+    border-radius: 0 0 40% 40% ;
+    position: absolute;
+}
+
+.finger:nth-child(5){
+    left: 50px;
+    top: 69px;
+    transform: rotate(
+            -7deg
+    );
+}
+
+.finger:nth-child(4){
+    left: 87px;
+    top: 55px;
+    transform: rotate(
+            -40deg
+    );
+}
+
+
+.finger:nth-child(3){
+    left: 10px;
+    top: 50px;
+    transform: rotate(40deg);
+}
+
+.shoulderLine{
+    height: 66px;
+    width: 4px;
+    background: black;
+    position: absolute;
+
+}
+
+.shoulderLine:nth-child(1){
+    left: 44px;
+    top: 5px;
+    transform: rotate(
+            5deg
+    );
+}
+
+.shoulderLine:nth-child(2){
+    left: 76px;
+    top: 1px;
+    transform: rotate(
+            -2deg
+    );
+}
+
+.shoe{
+    width: 204px;
+    height: 150px;
+    position: absolute;
+    left: 118px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.flippedShoe{
+    transform: scaleX(-1);
+    left: 322px;
+}
+
+.shoeTriangle1{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 200px 300px;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    top: -114px;
+    left: -78px;
+    transform: rotate(
+            -33deg
+    );
+}
+
+.shoeTriangle2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 500px 200px;
+    border-color: transparent transparent black transparent;
+    position: absolute;
+    top: -405px;
+    left: 70px;
+    transform: rotate(
+            -10deg
+    );
+}
+
+.head{
+    width: 483px;
+    height: 372px;
+    background: blanchedalmond;
+    position: absolute;
+    border-radius: 0 0 0 230px;
+    right: 471px;
+    top: 1574px;
+    z-index: 3;
+    border: 8px solid black;
+}
+
+.headCircle{
+    width: 2960px;
+    height: 2081px;
+    border-radius: 50%;
+    position: absolute;
+    left: -1939px;
+    top: -1578px;
+    overflow: hidden;
+}
+
+.borderCircle{
+    width: 2960px;
+    height: 2081px;
+    border-radius: 50%;
+    position: absolute;
+    left: -2021px;
+    top: -1588px;
+    border: 8px solid black;
+}
+.borderContainer{
+    width: 487px;
+    height: 386px;
+    position: absolute;
+    border-radius: 0 0 0 230px;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
