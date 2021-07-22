@@ -1,5 +1,16 @@
 body{
     overflow: hidden;
+    background: darkgrey;
+}
+
+.floor{
+    margin-top: calc(50vh + 200px);
+    width: 100%;
+    height: 50vh;
+    background: lightgrey;
+    position: absolute;
+    z-index: -1;
+    left: 0;
 }
 
 .dexter{
@@ -11,6 +22,7 @@ body{
 }
 
 .body{
+    background: white;
     width: 400px;
     height: 250px;
     border: 10px solid black;
