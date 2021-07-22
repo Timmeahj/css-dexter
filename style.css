@@ -5,7 +5,6 @@ body{
 .dexter{
     width: 550px;
     height: 600px;
-    border: 1px solid red;
     position: absolute;
     margin-left: calc(50% - 275px);
     margin-top: calc(50vh - 300px);
@@ -25,9 +24,10 @@ body{
     height: 40px;
     width: 10px;
     border-radius: 50%;
-    left: 50%;
-    bottom: 20px;
+    left: 48%;
+    bottom: 33px;
     position: absolute;
+    transform: scale(1.6);
 }
 
 .zipper{
@@ -59,7 +59,7 @@ body{
     height: 0;
     border-style: solid;
     border-width: 90px 90px 0 0;
-    border-color: purple transparent transparent transparent;
+    border-color: #823289 transparent transparent transparent;
     transform: rotate(-130deg);
     left: 20px;
     position: absolute;
@@ -80,7 +80,7 @@ body{
 }
 
 .finger{
-    background: purple;
+    background: #823289;
     width: 25px;
     height: 55px;
     border: 3px solid black;
@@ -180,7 +180,7 @@ body{
 .head{
     width: 483px;
     height: 372px;
-    background: blanchedalmond;
+    background: #FDE2D9;
     position: absolute;
     border-radius: 0 0 0 230px;
     right: 471px;
@@ -194,7 +194,7 @@ body{
     height: 70px;
     border-radius: 50%;
     border: 0px solid black;
-    background: blanchedalmond;
+    background: #FDE2D9;
     position: absolute;
     right: -56px;
     top: 122px;
@@ -244,7 +244,7 @@ body{
     border-radius: 0 0 0 230px;
     z-index: 3;
     right: 0;
-    top: 0;
+    top: 1px;
     overflow: hidden;
 }
 
@@ -264,7 +264,7 @@ body{
     border-radius: 50%;
     left: 0;
     top: -100px;
-    background: aqua;
+    background: #7AC7E9;
     border: 20px solid black;
 }
 
@@ -275,8 +275,9 @@ body{
     border-radius: 50%;
     left: 230px;
     top: -114px;
-    background: aqua;
+    background: #7AC7E9;
     border: 20px solid black;
+    z-index: 100;
 }
 
 .frame{
@@ -284,7 +285,7 @@ body{
     width: 520px;
     background: black;
     position: absolute;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .eye{
@@ -303,6 +304,7 @@ body{
 .rightEye{
     top: -27px;
     left: 380px;
+    z-index: 100;
 }
 
 .earThingy{
@@ -332,7 +334,7 @@ body{
     height: 0;
     border-style: solid;
     border-width: 120px 170px 0 170px;
-    border-color: blanchedalmond transparent transparent transparent;
+    border-color: #FDE2D9 transparent transparent transparent;
     position: absolute;
     top: 15px;
     left: 4px;
@@ -362,4 +364,112 @@ body{
     /* border: 1px solid green; */
     height: 65px;
     overflow: hidden;
+}
+
+.mouthTriangle{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 120px 170px 0 170px;
+    border-color: #FDE2D9 transparent transparent transparent;
+    position: absolute;
+    top: 15px;
+    left: 4px;
+    transform: rotate(
+            3deg
+    );
+    z-index: 1;
+}
+
+.mouthBorder{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 120px 170px 0 170px;
+    border-color: black transparent transparent transparent;
+    position: absolute;
+    top: 19px;
+    left: 12px;
+    transform: rotate(
+            3deg
+    ) scale(1.1);
+}
+
+.mouth{
+    position: absolute;
+    width: 122px;
+    /* border: 1px solid green; */
+    height: 65px;
+    overflow: hidden;
+    transform: rotate(
+            150deg
+    ) scaleX(-1);
+    top: 39px;
+    left: 28px;
+}
+
+.mouthFix{
+    width: 50px;
+    height: 44px;
+    background: #FDE2D9;
+    position: absolute;
+    z-index: 10;
+    left: 110px;
+    top: 14px;
+}
+
+.hair{
+    width: 550px;
+    height: 139px;
+    position: absolute;
+    left: 0;
+    top: -66px;
+    z-index: 100;
+}
+
+.strand{
+    top: -100px;
+    right: -100px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 10000;
+}
+
+.foreHeadFix{
+    background: #FDE2D9;
+    width: 162px;
+    height: 80px;
+    position: absolute;
+    z-index: 1000000000;
+    right: 0;
+    top: -1px;
+}
+
+.hair1{
+    position: absolute;
+    left: -4px;
+    bottom: -45px;
+    font-size: 80px;
+    transform: rotate(
+            70deg
+    ) scaleY(2);
+}
+
+.hairSvg{
+    position: absolute;
+    width: 652px;
+    left: -93px;
+    top: -187px;
+    transform: scaleY(0.8);
+}
+
+.hair2{
+    position: absolute;
+    left: -4px;
+    bottom: -36px;
+    font-size: 80px;
+    transform: rotate(
+            30deg
+    ) scaleY(2);
 }
